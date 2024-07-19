@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Car Dashboard</title>
+    <script>
+        function loadFirstScreen() {
+            window.location.href = 'index1.html';
+        }
+        function loadSecondScreen() {
+            window.location.href = 'index2.html';
+        }
+        function loadParkedScreen() {
+            window.location.href = 'index_1.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="left-section">
+                <div class="time-date-weather">
+                    <div class="time-date">
+                        <p id="time">12:45 PM</p>
+                        <p id="date">Sunday, 5 May</p>
+                    </div>
+                    <div class="weather">
+                        <p id="weather-icon"><img src="E:/frontend screens/icons/tabler_sun-filled (1).svg" alt="Weather Icon"></p>
+                        <p id="temperature">23°C / 27°C</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="connectivity-icons">
+                    <div class="icon" style="background-image: url('E:/frontend screens/icons/network.svg');"></div>
+                    <div class="icon" style="background-image: url('E:/frontend screens/icons/bluetooth.svg');"></div>
+                    <div class="icon" style="background-image: url('E:/frontend screens/icons/5g.svg');"></div>
+                </div>
+                <div class="battery-info-bar">
+                    <div class="battery-info">
+                        <div class="remaining">
+                            <span class="remaining-km" id="distance">204</span><span class="unit">km</span>
+                            <div class="remaining-text">Remaining</div>
+                        </div>
+                        <div class="battery">
+                            <span class="battery-percentage" id="battery">85</span><span class="unit">%</span>
+                            <div class="battery-text">Battery</div>
+                        </div>
+                        <div class="average">
+                            <span class="avg-wh" id="average">128</span><span class="unit">Wh/km</span>
+                            <div class="average-text">Average</div>
+                        </div>
+                    </div>
+                    <div class="battery-bar-container">
+                        <div class="battery-bar-base">
+                            <div class="battery-bar-fill" id="battery-bar-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <p class="select-mode-text">Select a mode to start driving</p>
+            <div class="mode-buttons">
+                <div class="mode-button" onclick="loadSecondScreen()">
+                    <img src="E:/frontend screens/icons/Drive Glow.svg" alt="Drive Icon">
+                </div>
+                <div class="mode-button" onclick="loadParkedScreen()">
+                    <img src="E:\frontend screens/icons/Welcome Screen/Neutral/Variant2.svg"alt="Parked Icon">
+                </div>
+                <div class="mode-button" onclick="loadFirstScreen()">
+                    <img src="E:/frontend screens/icons/Variant2.svg" alt="Auto Icon">
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="toolbar">
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/home.svg');" onclick="openNewPage('https://example.com/page1')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/call.svg');" onclick="openNewPage('https://example.com/page2')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/music.svg');" onclick="openNewPage('https://example.com/page6')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/tesla.svg');" onclick="openNewPage('https://example.com/page4')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/navig.svg');" onclick="openNewPage('https://example.com/page5')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/fan.svg');" onclick="openNewPage('https://example.com/page6')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/settings.svg');" onclick="openNewPage('https://example.com/page3')"></button>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

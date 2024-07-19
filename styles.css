@@ -1,0 +1,277 @@
+/* General styles */
+body {
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #131D43 0%,
+        #131E41 25%,
+        #1D2A5D 40%,
+        #12224F 68%,
+        #081F44 100%
+    ), #313131; /* Fallback color */
+    color: #fff; /* White text */
+}
+
+.container {
+    width: 100%;
+    max-width: 2000px; /* Increased width to fit the icons */
+    height: 100%;
+    max-height: 600px; /* Full height with a max */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border: 2px solid #fff; /* Thin white border */
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 60px; /* Adjust as needed */
+    padding: 0 20px; /* Added padding for spacing */
+}
+
+.left-section, .right-section {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 25px; /* Align items to the bottom */
+}
+
+.time-date-weather {
+    display: flex;
+    align-items: center;
+}
+
+.time-date {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+.time-date #time {
+    font-size: 36px;
+    margin-bottom: 2px; /* Reduced line width */
+}
+
+.time-date #date {
+    font-size: 18px;
+    margin-top: 2px; /* Reduced line width */
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Ensure there is space between time and weather */
+}
+
+.weather #weather-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.weather #temperature {
+    font-size: 18px;
+}
+
+.connectivity-icons {
+    position: absolute;
+    top: 25px; /* Adjusted distance from top */
+    right: 10px; /* Adjusted distance from right */
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    align-items: center;
+    z-index: 100; /* Ensure icons are on top */
+}
+
+.connectivity-icons .icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px; /* Space between icons */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.battery-info-bar {
+    display: flex;
+    align-items: center; /* Align items to the center vertically */
+    justify-content: flex-end; /* Align items to the right */
+    margin-right: 50px; /* Adjust margin to align */
+    margin-top: auto; /* Push to the bottom */
+    padding-bottom: 20px; /* Add padding to create space */
+    position: absolute; /* Position absolute for precise alignment */
+    top: 50%; /* Align vertically in the middle */
+    transform: translateY(-50%); /* Center vertically */
+    right: 0; /* Align to the right */
+}
+
+.battery-info {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 255px;
+    margin-right: 60px; /* Increased margin to push stats left */
+}
+
+.remaining-km {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400; /* Reduced font weight */
+    font-size: 38px;
+    margin-bottom: 0; /* Reduce margin */
+}
+.unit {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400; /* Reduced font weight */
+    font-size: 18px;
+    margin-bottom: 0; /* Reduce margin */
+}
+
+.remaining-text, .battery-text, .average-text {
+    font-size: 15px;
+    font-weight: 400; /* Reduced font weight */
+    margin-top: 0; /* Reduce margin */
+    margin-bottom: 5px; /* Adjust margin */
+}
+
+.battery-percentage {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400; /* Reduced font weight */
+    font-size: 38px;
+    margin-bottom: 0; /* Reduce margin */
+}
+
+.avg-wh {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400; /* Reduced font weight */
+    font-size: 38px;
+    margin-bottom: 0; /* Reduce margin */
+}
+
+.battery-bar-container {
+    width: 16px;
+    height: 306px; /* Adjusted height */
+    border-radius: 170px;
+    background-color: #D9D9D9;
+    position: absolute; /* Changed to absolute for precise positioning */
+    top: -5%; /* Adjust to align with stats */
+    right: 20px; /* Adjust to align with stats */
+}
+
+.battery-bar-base {
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    position: absolute;
+    bottom: 0;
+    border-radius: 170px; /* Rounded bottom */
+}
+
+.battery-bar-fill {
+    width: 100%;
+    background-color: #2CBE6B;
+    position: absolute;
+    bottom: 0;
+    height: 85%; /* Initially set to 85% */
+    border-radius: 170px; /* Rounded top and bottom */
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mode-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+.mode-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 217.31px; /* Square button size */
+    height: 263.88px; /* Square button size */
+}
+
+/* Style for the select mode text */
+.select-mode-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* General styles for mode buttons */
+.mode-button img {
+    width: 217.31px; /* Icon size */
+    height: 263.88px; /* Icon size */
+    border-radius: 20px; /* Rounded edges */
+}
+
+.mode-button img.auto-icon {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Slight glow */
+}
+
+.mode-button:hover img {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* More intense glow on hover */
+}
+
+.mode-button p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #000; /* Black background */
+}
+
+.toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.icon-button {
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 0 50px; /* Adjusted spacing between icons */
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    color: #76c7c0;
+}
