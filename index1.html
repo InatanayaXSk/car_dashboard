@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Car Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="left-section">
+                <div class="time-date-weather">
+                    <div class="time-date">
+                        <p id="time" class="time">12:45 PM</p>
+                        <p id="date" class="date">Sunday, 5 May</p>
+                    </div>
+                    <div class="weather">
+                        <p id="weather-icon"><img src="images/Vector (6).svg" alt=""></p>
+                        <p id="temperature">23°C / 27°C</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="connectivity-icons">
+                    <div class="icon wifi-icon" style="background-image: url('images/Vector (4).svg');"></div>
+                    <div class="icon bluetooth-icon" style="background-image: url('images/Vector (5).svg');"></div>
+                    <div class="icon signal-icon" style="background-image: url('images/Union (3).svg');"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="start-screen">
+                <div class="chevrons left-chevrons">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                </div>
+                <div class="start-button">
+                    <div class="start-circle">
+                        <span class="start-text">START</span>
+                        <span class="mode-text">AUTO MODE</span>
+                    </div>
+                </div>
+                <div class="chevrons right-chevrons">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                </div>
+            </div>
+        </main>
+
+        <div class="battery-info-bar">
+            <div class="battery-info">
+                <div class="remaining">
+                    <span class="remaining-km" id="distance">204</span><span class="unit">km</span>
+                    <div class="remaining-text">Remaining</div>
+                </div>
+                <div class="battery">
+                    <span class="battery-percentage" id="battery">85</span><span class="unit">%</span>
+                    <div class="battery-text">Battery</div>
+                </div>
+                <div class="average">
+                    <span class="avg-wh" id="average">128</span><span class="unit">Wh/km</span>
+                    <div class="average-text">Average</div>
+                </div>
+            </div>
+            <div class="battery-bar-container">
+                <div class="battery-bar-base">
+                    <div class="battery-bar-fill" id="battery-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="toolbar">
+                <button class="icon-button home-icon" style="background-image: url('images/Group 4548.svg');" onclick="openNewPage('https://example.com/page1')"></button>
+                <button class="icon-button phone-icon" style="background-image: url('images/Vector (3).svg');" onclick="openNewPage('https://example.com/page2')"></button>
+                <button class="icon-button music-icon" style="background-image: url('images/Group 427318962.svg');" onclick="openNewPage('https://example.com/page6')"></button>
+                <button class="icon-button car-icon" style="background-image: url('images/tesla.svg');" onclick="openNewPage('https://example.com/page4')"></button>
+                <button class="icon-button navigation-icon" style="background-image: url('images/Vector (1).svg');" onclick="openNewPage('https://example.com/page5')"></button>
+                <button class="icon-button climate-icon" style="background-image: url('images/Vector (2).svg');" onclick="openNewPage('https://example.com/page6')"></button>
+                <button class="icon-button settings-icon" style="background-image: url('images/Group 427318961.svg');" onclick="openNewPage('https://example.com/page3')"></button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
