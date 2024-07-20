@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_1.css">
+    <title>Car Dashboard - Parked Mode</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="left-section">
+                <div class="time-date-weather">
+                    <div class="time-date">
+                        <p id="time">12:45 PM</p>
+                        <p id="date">Sunday, 5 May</p>
+                    </div>
+                    <div class="weather">
+                        <p id="weather-icon"><img src='E:/frontend screens/icons/tabler_sun-filled (1).svg' alt="Weather Icon"></p>
+                        <p id="temperature">23°C / 27°C</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="connectivity-icons">
+                    <div class="icon" style="background-image: url('images/wifi.svg');"></div>
+                    <div class="icon" style="background-image: url('images/bluetooth.svg');"></div>
+                    <div class="icon" style="background-image: url('images/gps.svg');"></div>
+                </div>
+                <div class="battery-info-bar">
+                    <div class="battery-info">
+                        <div class="remaining">
+                            <span class="remaining-km" id="distance">204</span><span class="unit">km</span>
+                            <div class="remaining-text">Remaining</div>
+                        </div>
+                        <div class="battery">
+                            <span class="battery-percentage" id="battery">85</span><span class="unit">%</span>
+                            <div class="battery-text">Battery</div>
+                        </div>
+                        <div class="average">
+                            <span class="avg-wh" id="average">128</span><span class="unit">Wh/km</span>
+                            <div class="average-text">Average</div>
+                        </div>
+                    </div>
+                    <div class="battery-bar-container">
+                        <div class="battery-bar-base">
+                            <div class="battery-bar-fill" id="battery-bar-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="maps-section">
+                <img src="E:/frontend screens/icons/car.svg" alt="Car" class="car-image">
+                <p class="parked-mode-text">Vehicle is currently in Parked mode</p>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="toolbar">
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/hoem.png');" onclick="window.location.href='index.html'"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/call.png');" onclick="openNewPage('https://example.com/page2')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/music.png');" onclick="openNewPage('https://example.com/page3')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/car.png');" onclick="openNewPage('https://example.com/page4')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/navig.png');" onclick="openNewPage('https://example.com/page5')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/fan.png');" onclick="openNewPage('https://example.com/page6')"></button>
+                <button class="icon-button" style="background-image: url('E:/frontend screens/icons/settings.png');" onclick="openNewPage('https://example.com/page7')"></button>
+            </div>
+        </footer>
+    </div>
+    <script src="script_1.js"></script>
+</body>
+</html>
